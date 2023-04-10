@@ -82,7 +82,7 @@ use_tailwind <- function(css = NULL, tailwindConfig = NULL) {
   if(!is.null(tailwindConfig)) {
     html_config <- list(htmltools::HTML(paste(
       "<!-- Specify a custom TailwindCSS configuration -->\n",
-      "<script>\n\n",
+      "<script type='tailwind-config'>\n\n",
       paste(read_utf8_(tailwindConfig), collapse = "\n"),
       "\n\n</script>",
       collapse = "\n"
