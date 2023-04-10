@@ -57,7 +57,7 @@ use_tailwind <- function(css = NULL, tailwindConfig = NULL) {
   }
 
   # https://tailwindcss.com/docs/installation/play-cdn
-  url <- "https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"
+  url <- "https://unpkg.com/tailwindcss-jit-cdn"
 
   html_cdn <- list(htmltools::HTML(sprintf(
     "<!-- Include CDN JavaScript -->\n<script src='%s'></script>",
