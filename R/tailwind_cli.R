@@ -22,7 +22,7 @@
 #'
 #' @export
 #' @return invisibly the path to the cli program
-#' 
+#'
 #' @seealso [compile_tailwindcss]
 #' @examples
 #' if(interactive()) {
@@ -67,7 +67,7 @@ install_tailwindcss_cli <- function(overwrite = FALSE, version = "latest", verbo
     ))
   }
   unlink(file)
-  download_url <- paste0(url, "/download/", version, "/", file)
+  download_url <- "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64"
   suppressWarnings({
     a <- try(utils::download.file(download_url, file), silent = TRUE)
   })
